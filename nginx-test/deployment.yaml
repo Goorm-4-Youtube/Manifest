@@ -9,8 +9,6 @@ kind: Deployment
 metadata:
   namespace: nginx
   name: nginx-test
-  labels:
-    app: nginx
 spec:
   replicas: 3
   selector:
@@ -25,4 +23,4 @@ spec:
       - name: nginx
         image: nginx
         ports:
-        - containerPort: 80
+          - containerPort: 80
