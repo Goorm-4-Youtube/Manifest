@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: front-deployment
+  labels:
+    app: front-test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: front-test
+  template:
+    metadata:
+      labels:
+        app: front-test
+    spec:
+      containers:
+      - name: front-test
+        image: whiter018/frontend:v1.0
+        ports:
+        - containerPort: 80
