@@ -1,6 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  namespace: nginx
   name: test-ingress
   annotations:
     # core settings
@@ -20,4 +21,5 @@ spec:
             backend:
               service:
                 name: test-nginx-svc
-                port: 80
+                port: 
+                  number: 80

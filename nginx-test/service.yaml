@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: nginx
   name: test-nginx-svc # ingress 파일에서 넣어주어야 될 부분 service name
 spec:
   type: NodePort
@@ -11,4 +12,3 @@ spec:
     port: 80 # ingress 파일에서 넣어주어야 될 부분 service port
     protocol: TCP
     targetPort: 80
-    nodePort: 30000
