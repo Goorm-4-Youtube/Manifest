@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namesapce: kube-system
   name: front-deployment
   labels:
     app: front-test
