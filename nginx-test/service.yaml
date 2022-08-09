@@ -4,7 +4,7 @@ metadata:
   namespace: nginx
   name: test-nginx-svc # ingress 파일에서 넣어주어야 될 부분 service name
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: nginx-test # deployment file 안의 이름과 동일해야 한다. 
   ports:
