@@ -10,5 +10,5 @@ spec:
   ports:
   - protocol: TCP
     port: 80 # service port number
-    targetPort: 8085 # port number of target pod in node 
+    targetPort: 80 # port number of target pod in node 
 
