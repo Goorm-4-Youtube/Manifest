@@ -9,6 +9,5 @@ spec:
     app: back-test # deployment file 안의 selector.app의 이름과 동일해야 한다. 
   ports:
   - protocol: TCP
-    port: 80 # service port number
-    targetPort: 80 # port number of target pod in node 
-
+    port: 8080 # service port number, 인그레스 파일안의 포트 넘버와 동일해야 한다. 
+    targetPort: 8085 # port number of target pod in node, 디플로이먼트 파일안의 포트 넘버와 동일해야 한다. 
