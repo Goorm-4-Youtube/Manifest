@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: backend
+  name: back
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deploy
-  namespace: backend
+  namespace: back
 spec:
   selector:
     matchLabels:
