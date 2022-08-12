@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: backend
-          image: seonwoohongmin/backend:v24
+          image: seonwoohongmin/backend:v25
           ports:
             - containerPort: 8085
