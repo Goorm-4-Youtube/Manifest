@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: front
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deploy
+  namespace: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend # service.yaml 안의 selector.app 이름과 동일해야 한다. 
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: seonwoohongmin/frontend:v21
+          ports:
+            - containerPort: 4200
