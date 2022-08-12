@@ -10,5 +10,5 @@ spec:
   ports:
   - protocol: TCP
     port: 80 # service port number, 인그레스 파일안의 포트 넘버와 동일해야 한다.
-    targetPort: 4200 # port number of target pod in node, 디플로이먼트 파일안의 포트 넘버와 동일해야 한다. 
+    targetPort: 80 # port number of target pod in node, 디플로이먼트 파일안의 포트 넘버와 동일해야 한다. 
 
