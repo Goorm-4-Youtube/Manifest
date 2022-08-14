@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: seonwoohongmin/frontend:v31
+          image: whiter018/frontend:test
           ports:
             - containerPort: 80
