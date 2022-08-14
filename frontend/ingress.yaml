@@ -19,3 +19,10 @@ spec:
               name: frontend-svc # 서비스 파일의 metadata.name 과 같아야 한다. 
               port:
                 number: 80
+        - path: /api/
+          pathType: Prefix
+          backend:
+            service:
+              name: backend-svc
+              port: 
+                number: 8080
