@@ -21,6 +21,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: seonwoohongmin/frontend:v40
+          image: seonwoohongmin/frontend:v41
           ports:
             - containerPort: 80
